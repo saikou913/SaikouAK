@@ -2,41 +2,109 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Saikou</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <style>
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+        body{
+            margin:0;
+            background:#1E1E1E;
+            font-family:Arial;
+            color:white;
+        }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        /* NAVBAR */
+
+        .navbar{
+            width:50%;
+            height:10px;
+
+            display:flex;
+
+            margin:auto;
+            margin-top:70px;
+        }
+
+        .nav{
+            flex:1;
+            transition:0.4s;
+        }
+
+        .nav:hover{
+            flex:2;
+            height:20px;
+        }
+
+        .blue{
+            background:#88C1B0;
+        }
+
+        .yellow{
+            background:#EDA93C;
+        }
+
+        .red{
+            background:#9A2D28;
+        }
+
+        /* HERO */
+
+        .hero{
+            height:80vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .hero h1{
+            color:#E86031;
+            font-size:90px;
+        }
+
+        /* CARD */
+
+        .card{
+            width:40%;
+
+            margin:auto;
+            margin-bottom:100px;
+
+            background:black;
+
+            padding:50px;
+
+            border-top:25px solid #88C1B0;
+        }
+
+        .card h2{
+            font-size:50px;
+        }
+
+        .card p{
+            line-height:1.7;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
 
-        <a href="#about" class="nav cyan">
-            <span>ABOUT ME</span>
-        </a>
+    <div class="navbar">
 
-        <a href="#niche" class="nav yellow">
-            <span>NICHEKNIGHTS</span>
-        </a>
+        <div class="nav blue"></div>
+        <div class="nav yellow"></div>
+        <div class="nav red"></div>
 
-        <a href="#contact" class="nav red">
-            <span>CONTACT</span>
-        </a>
-
-    </nav>
+    </div>
 
     <!-- HERO -->
+
     <section class="hero">
 
         <h1>SAIKOU</h1>
@@ -44,85 +112,17 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
 
-        <p class="label">About me</p>
+    <div class="card">
 
-        <div class="card blue-border">
+        <h2>ABOUT ME</h2>
 
-            <h2>
-                <span class="circle">A</span>
-                ABOUT ME
-            </h2>
+        <p>
+            Hello, I'm Saikou.
+            I've been playing Arknights since February 2020.
+        </p>
 
-            <p>
-                Hello, I'm Saikou.
-                I've been playing Arknights since February 2020,
-                and I've spent a significant amount of time exploring and enjoying the game.
-            </p>
-
-            <br>
-
-            <p>
-                I actively play the Ammoknights niche —
-                a playstyle focused on operators who utilize the ammo system.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- NICHE -->
-    <section id="niche" class="section">
-
-        <p class="label">Nicheknights</p>
-
-        <div class="card yellow-border">
-
-            <h2>
-                <span class="circle">N</span>
-                NICHEKNIGHTS
-            </h2>
-
-            <p>
-                Ammoknights is a nicheknights playstyle in Arknights
-                that focuses on operators with ammo-based mechanics.
-            </p>
-
-            <br>
-
-            <button class="member-btn">
-                Click here to view member details.
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-
-        <p class="label">Contact</p>
-
-        <div class="card red-border center">
-
-            <h1 class="contact-title">
-                SAIKOU
-            </h1>
-
-            <div class="socials">
-
-                <div class="social"></div>
-                <div class="social"></div>
-                <div class="social"></div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <script src="./script.js"></script>
+    </div>
 
 </body>
 
