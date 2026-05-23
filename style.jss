@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
 *{
     margin:0;
     padding:0;
@@ -12,21 +10,21 @@ html{
 
 body{
     background:#1E1E1E;
-    color:#FFFFFF;
-    overflow-x:hidden;
-
+    color:white;
     font-family:'Poppins',sans-serif;
 }
 
 /* NAVBAR */
 
-.top-nav{
-    width:52%;
+.navbar{
+    width:50%;
+
     height:8px;
 
     display:flex;
 
     position:fixed;
+
     top:70px;
     left:50%;
 
@@ -35,17 +33,15 @@ body{
     z-index:999;
 }
 
-.nav-segment{
+.nav{
     flex:1;
 
-    transition:.45s cubic-bezier(.77,0,.18,1);
+    transition:.4s;
 
     position:relative;
-
-    text-decoration:none;
 }
 
-.nav-segment span{
+.nav span{
     position:absolute;
 
     top:50%;
@@ -55,22 +51,20 @@ body{
 
     opacity:0;
 
-    color:#FFFFFF;
+    color:white;
 
     font-size:11px;
     font-weight:700;
 
-    transition:.35s;
-
-    white-space:nowrap;
+    transition:.3s;
 }
 
-.nav-segment:hover{
-    flex:2.2;
+.nav:hover{
+    flex:2;
     height:18px;
 }
 
-.nav-segment:hover span{
+.nav:hover span{
     opacity:1;
 }
 
@@ -99,30 +93,24 @@ body{
 .hero h1{
     color:#E86031;
 
-    font-size:76px;
-    font-weight:700;
+    font-size:80px;
 
-    letter-spacing:2px;
-
-    font-family:"ITC Avant Garde Gothic Std", sans-serif;
+    font-family:"ITC Avant Garde Gothic Std",sans-serif;
 }
 
 /* SECTION */
 
 .section{
-    width:100%;
     margin-bottom:120px;
 }
 
-.section-label{
+.label{
     width:40%;
-
     margin:auto;
+
     margin-bottom:10px;
 
-    color:#666666;
-
-    font-size:14px;
+    color:#666;
 }
 
 /* CARD */
@@ -134,12 +122,10 @@ body{
 
     background:#050505;
 
-    padding:48px;
-
-    position:relative;
+    padding:50px;
 }
 
-.cyan-border{
+.blue-border{
     border-top:28px solid #88C1B0;
 }
 
@@ -152,15 +138,14 @@ body{
 }
 
 .card h2{
-    font-size:52px;
-    font-weight:800;
-
     display:flex;
     align-items:center;
 
     gap:10px;
 
     margin-bottom:40px;
+
+    font-size:52px;
 }
 
 .circle{
@@ -172,25 +157,18 @@ body{
     background:#E86031;
 
     display:flex;
-    align-items:center;
     justify-content:center;
-
-    font-size:32px;
-    font-weight:700;
+    align-items:center;
 }
 
 .card p{
-    color:#FFFFFF;
-
     line-height:1.7;
-
-    font-size:15px;
 }
 
 /* BUTTON */
 
 .member-btn{
-    margin-top:25px;
+    margin-top:20px;
 
     background:none;
     border:none;
@@ -200,136 +178,36 @@ body{
     cursor:pointer;
 
     font-size:15px;
-
-    font-family:'Poppins',sans-serif;
-}
-
-/* MEMBERS */
-
-.hidden{
-    display:none;
-}
-
-.carousel-container{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:20px;
-}
-
-.carousel{
-    display:flex;
-    gap:8px;
-}
-
-.operator-card{
-    width:82px;
-    height:130px;
-
-    overflow:hidden;
-
-    transition:.3s;
-}
-
-.operator-card:hover{
-    transform:translateY(-8px);
-}
-
-.operator-card img{
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-}
-
-.arrow{
-    background:none;
-    border:none;
-
-    color:white;
-
-    cursor:pointer;
-
-    font-size:22px;
 }
 
 /* CONTACT */
 
-.contact-card{
+.center{
     text-align:center;
-
-    padding:70px 40px;
 }
 
 .contact-title{
     color:#E86031;
 
     font-size:72px;
-    font-weight:700;
 
     margin-bottom:50px;
 
-    font-family:"ITC Avant Garde Gothic Std", sans-serif;
+    font-family:"ITC Avant Garde Gothic Std",sans-serif;
 }
 
 .socials{
     display:flex;
     justify-content:center;
 
-    gap:40px;
+    gap:30px;
 }
 
-.socials a{
-    width:44px;
-    height:44px;
+.social{
+    width:45px;
+    height:45px;
 
     border-radius:50%;
 
     background:white;
-    color:black;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-decoration:none;
-
-    transition:.3s;
-}
-
-.socials a:hover{
-    transform:scale(1.15);
-}
-
-/* RESPONSIVE */
-
-@media(max-width:1200px){
-
-    .card,
-    .section-label,
-    .top-nav{
-        width:80%;
-    }
-
-}
-
-@media(max-width:768px){
-
-    .hero h1{
-        font-size:52px;
-    }
-
-    .card{
-        padding:32px;
-    }
-
-    .card h2{
-        font-size:34px;
-    }
-
-    .contact-title{
-        font-size:48px;
-    }
-
 }
